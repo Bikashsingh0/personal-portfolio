@@ -1,0 +1,477 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Personal Portfolio Website</title>
+    <link rel="stylesheet" href="style.css">
+    <script src="https://kit.fontawesome.com/86f24353b5.js" crossorigin="anonymous"></script>
+</head>
+<body>
+
+    <div id="header">
+        <div class="container">
+            <nav>
+                <img src="logo.png" alt="bikash" class="logo">
+
+                <ul id="sidemenu">
+                    <li><a href="#header">Home</a></li>
+                    <li><a href="#about">About</a></li>
+                    <li><a href="#services">Services</a></li>
+                    <li><a href="#portfolio">Project</a></li>
+                    <li><a href="#concact">Contact</a></li>
+                    <li>
+                        <i class="fa-solid fa-circle-xmark" onclick="closemenu()"></i>
+                    </li>
+                </ul>
+
+                <i class="fa-solid fa-bars" onclick="openmenu()"></i>
+            </nav>
+
+            <div class="header-text">
+                <p>Graphics Designing & IT Support</p>
+                <h1>Hi, I'm <span>Bikash</span><br> Singh From Nepal</h1>
+            </div>
+        </div>
+    </div>
+
+    <!-- --------about-------- -->
+    <div id="about">
+        <div class="container">
+            <div class="row">
+                <div class="about-col-1">
+                    <img src="profile.png" alt="image2">
+                </div>
+
+                <div class="about-col-2">
+                    <h1 class="sub-title">About Me</h1>
+
+                    <p>
+                        I am passionate about creating impactful digital experiences by combining creativity and technology. I have professional experience as a Graphic Designer, Social Media Specialist, IT Officer, and Web Developer, with skills in designing visually appealing graphics, managing engaging social media content, developing responsive websites using JavaScript, and modern frameworks, and handling IT systems with efficient troubleshooting and maintenance. I am also proficient in tools like Canva, Adobe Photoshop and Figma, which I use to create professional designs that strengthen brand identity and communication. My journey blends academic learning with real-world experience, allowing me to continuously grow both creatively and technically while working on meaningful projects. Whether I'm creating user-friendly graphical user interfaces or learning the subtleties of visual design, I try to bring honesty and purpose to everything I do. I am highly motivated to contribute my skills in a professional environment where I can support digital growth, improve user experiences, and deliver creative and technical solutions that make a real impact.
+                    </p>
+
+                    <div class="tab-titles">
+                        <p class="tab-links active-link" onclick="opentab(event, 'Skills')">Skills</p>
+                        <p class="tab-links" onclick="opentab(event, 'Experience')">Experience</p>
+                        <p class="tab-links" onclick="opentab(event, 'Education')">Education</p>
+                    </div>
+
+                    <div class="tab-contents active-tab" id="Skills">
+                        <ul>
+                            <li><span>Graphics Designing</span><br>Creative Graphic Designer focused on impactful visuals that enhance brand identity and communication.</li>
+                            <li><span>IT Officer | Web Developing</span><br>Skilled in creating responsive websites and managing IT systems to ensure smooth, user-friendly, and efficient operations.</li>
+                            <li><span>Social Media Specialist</span><br>Results-driven Social Media Specialist focused on engaging content and strong brand presence online.</li>
+                        </ul>
+                    </div>
+
+                    <div class="tab-contents" id="Experience">
+                        <ul>
+                            <li><span>2023 - 2026</span><br>Graphic Designer & Digital Media Specialist at Encoded Tech Pvt. Ltd., Battisputali, Kathmandu</li>
+                            <li><span>2020 - 2022</span><br>Training at Computer and Science Technology</li>
+                        </ul>
+                    </div>
+
+                    <div class="tab-contents" id="Education">
+                        <ul>
+                            <li><span>Join 2022</span><br>Bachelor in Computer Applications (BCA)</li>
+                            <li><span>2022 – Present | Expected Graduation: 2027</span><br>Orchid International College, Gaushala, Kathmandu, Affiliated with Tribhuvan University</li>
+                        </ul>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+
+    <!-------------services----------------- -->
+    <div id="services">
+        <div class="container">
+            <h1 class="sub-title">Services</h1>
+
+            <div class="services-list">
+                <div>
+                    <i class="fa-solid fa-pen-to-square"></i>
+                    <h2>Graphic Designing</h2>
+                    <p>I specialize in creating visually compelling designs using tools like Adobe, Figma, Photoshop, and Canva. With a strong focus on branding and visual storytelling, I design logos, social media creatives, banners, and marketing materials that effectively communicate ideas. My approach combines creativity and strategy to deliver designs that enhance brand identity and engage audiences across digital and print platforms.</p>
+                    <a href="#">Learn more</a>
+                </div>
+
+                <div>
+                    <i class="fa-brands fa-chrome"></i>
+                    <h2>Web Developing</h2>
+                    <p>As an IT Officer and Web Developer, I have hands-on experience in managing systems, troubleshooting technical issues, and developing responsive websites using JavaScript and modern frameworks. I focus on creating efficient, secure, and user-friendly digital solutions. My goal is to ensure smooth system operations while building websites that deliver performance, functionality, and a seamless user experience.</p>
+                    <a href="#">Learn more</a>
+                </div>
+
+                <div>
+                    <i class="fa-solid fa-circle-user"></i>
+                    <h2>Social Media Management</h2>
+                    <p>I manage and create engaging social media content that builds brand presence and connects with target audiences. Skilled in content planning, design, and strategy, I develop posts, campaigns, and visuals that drive engagement and growth. By analyzing trends and audience behavior, I ensure consistent and impactful communication across platforms, helping brands achieve their marketing goals effectively.</p>
+                    <a href="#">Learn more</a>
+                </div>
+
+                <div>
+                    <i class="fa-solid fa-computer"></i>
+                    <h2>IT Support & System Management</h2>
+                    <p>Offering reliable IT support including system maintenance, troubleshooting, and technical assistance. Ensuring smooth operation of systems and networks while implementing efficient and secure solutions to improve productivity and performance.</p>
+                    <a href="#">Learn more</a>
+                </div>
+            </div>
+        </div>
+    </div>
+
+    <!-- -----------------project-------------- -->
+    <div id="portfolio">
+        <div class="container">
+            <h1 class="sub-title">Projects</h1>
+
+            <div class="work-list">
+
+                <div class="work">
+                    <div class="media">
+                        <img src="" alt="">
+                    </div>
+                    <div class="layer">
+                        <h3></h3>
+                        <p></p>
+                        <a href="#"><i class="fa-solid fa-up-right-from-square"></i></a>
+                    </div>
+                </div>
+
+                <div class="work">
+                    <div class="media">
+                        <img src="" alt="">
+                    </div>
+                    <div class="layer">
+                        <h3></h3>
+                        <p></p>
+                        <a href="#"><i class="fa-solid fa-up-right-from-square"></i></a>
+                    </div>
+                </div>
+
+                <div class="work">
+                    <div class="media">
+                        <video autoplay muted loop playsinline>
+                            <source src="" type="video/mp4">
+                            Your browser does not support the video tag.
+                        </video>
+                    </div>
+
+                    <div class="layer">
+                        <h3></h3>
+                        <p></p>
+                        <a href="#"><i class="fa-solid fa-up-right-from-square"></i></a>
+                    </div>
+                </div>
+
+                <div class="work">
+                    <div class="media">
+                        <img src="" alt="">
+                    </div>
+                    <div class="layer">
+                        <h3></h3>
+                        <p></p>
+                        <a href="#"><i class="fa-solid fa-up-right-from-square"></i></a>
+                    </div>
+                </div>
+
+                <div class="work">
+                    <div class="media">
+                        <img src="" alt="">
+                    </div>
+                    <div class="layer">
+                        <h3></h3>
+                        <p></p>
+                        <a href="#"><i class="fa-solid fa-up-right-from-square"></i></a>
+                    </div>
+                </div>
+
+                <div class="work">
+                    <div class="media">
+                        <img src="" alt="">
+                    </div>
+                    <div class="layer">
+                        <h3></h3>
+                        <p></p>
+                        <a href="#"><i class="fa-solid fa-up-right-from-square"></i></a>
+                    </div>
+                </div>
+
+                <div class="work">
+                    <div class="media">
+                        <img src="" alt="">
+                    </div>
+                    <div class="layer">
+                        <h3></h3>
+                        <p></p>
+                        <a href="#"><i class="fa-solid fa-up-right-from-square"></i></a>
+                    </div>
+                </div>
+
+                <div class="work">
+                    <div class="media">
+                        <img src="" alt="">
+                    </div>
+                    <div class="layer">
+                        <h3></h3>
+                        <p></p>
+                        <a href="#"><i class="fa-solid fa-up-right-from-square"></i></a>
+                    </div>
+                </div>
+
+            </div>
+
+            <a href="https://www.linkedin.com/in/bikashsingh007/" class="btn">See more</a>
+        </div>
+    </div>
+
+    <!-- ---------contact---------- -->
+    <div id="concact">
+        <div class="container">
+            <div class="row">
+                <div class="concact-left">
+                    <h1 class="sub-title">Contact Me</h1>
+                    <p><i class="fa-solid fa-paper-plane"></i>bikash07singh77@gmail.com</p>
+                    <p><i class="fa-sharp fa-solid fa-phone-volume"></i>9741750252</p>
+
+                    <div class="social-icons">
+                        <a href="https://www.facebook.com/bikash.singh.169705/" aria-label="Facebook">
+                            <i class="fa-brands fa-facebook"></i>
+                        </a>
+
+                        <a href="https://www.instagram.com/bikash___070/" aria-label="Instagram">
+                            <i class="fa-brands fa-instagram"></i>
+                        </a>
+
+                        <a href="https://www.linkedin.com/in/bikashsingh007/" aria-label="LinkedIn">
+                            <i class="fa-brands fa-linkedin"></i>
+                        </a>
+                    </div>
+
+                    <a href="MyCV.pdf" download class="btn btn2">Download CV</a>
+                </div>
+
+                <div class="concact-right">
+                    <form id="contact-form">
+                        <input type="text" name="name" placeholder="Your Name" required>
+                        <input type="email" name="email" placeholder="Your Email" required>
+                        <textarea name="message" rows="6" placeholder="Your Message" required></textarea>
+                        <button type="submit" class="btn btn2">Submit</button>
+                    </form>
+
+                    <span id="msg"></span>
+                </div>
+            </div>
+        </div>
+
+        <div class="copyright">
+            <p>© All rights reserved. Designed and developed by Bikash Singh.</p>
+        </div>
+    </div>
+
+    <!-- Contact Form Script -->
+    <script>
+        const form = document.getElementById("contact-form");
+        const msg = document.getElementById("msg");
+
+        form.addEventListener("submit", function(e) {
+            e.preventDefault();
+
+            fetch("https://script.google.com/macros/s/AKfycbwpDdxds8ym79XAO6Ga-sS34UhH5HibTEQWnS1av5CGwS42T6pLqESEapvXoAdtkQhB/exec", {
+                method: "POST",
+                body: new FormData(form)
+            })
+            .then(res => res.text())
+            .then(data => {
+                msg.innerHTML = "Message sent successfully ✅";
+                form.reset();
+
+                setTimeout(() => {
+                    msg.innerHTML = "";
+                }, 3000);
+            })
+            .catch(error => {
+                msg.innerHTML = "Error sending message ❌";
+            });
+        });
+    </script>
+
+    <!-- Project Preview Script -->
+    <script>
+        document.addEventListener("DOMContentLoaded", function () {
+            const projectLinks = document.querySelectorAll(".work .layer a");
+
+            if (!projectLinks.length) return;
+
+            const overlay = document.createElement("div");
+            overlay.className = "project-preview-overlay";
+
+            overlay.innerHTML = `
+                <div class="project-preview-box">
+                    <button class="project-preview-close" type="button">&times;</button>
+                    <img src="" alt="Project preview image">
+                    <video controls playsinline></video>
+                </div>
+            `;
+
+            document.body.appendChild(overlay);
+
+            const previewImage = overlay.querySelector("img");
+            const previewVideo = overlay.querySelector("video");
+            const closeBtn = overlay.querySelector(".project-preview-close");
+
+            projectLinks.forEach(function (link) {
+                const workCard = link.closest(".work");
+
+                if (!workCard) return;
+
+                const cardImage = workCard.querySelector("img");
+                const cardVideo = workCard.querySelector("video");
+
+                let mediaType = "";
+                let mediaSrc = "";
+
+                if (cardVideo) {
+                    const directVideoSrc = cardVideo.getAttribute("src");
+                    const sourceVideoSrc = cardVideo.querySelector("source")?.getAttribute("src");
+
+                    mediaSrc = directVideoSrc || sourceVideoSrc || "";
+                    mediaType = "video";
+                } else if (cardImage) {
+                    mediaSrc = cardImage.getAttribute("src") || "";
+                    mediaType = "image";
+                }
+
+                if (!mediaSrc) return;
+
+                link.setAttribute("href", mediaSrc);
+
+                link.addEventListener("click", function (e) {
+                    e.preventDefault();
+
+                    previewImage.classList.remove("active");
+                    previewVideo.classList.remove("active");
+
+                    previewImage.src = "";
+
+                    previewVideo.pause();
+                    previewVideo.removeAttribute("src");
+                    previewVideo.load();
+
+                    if (mediaType === "image") {
+                        previewImage.src = mediaSrc;
+                        previewImage.alt = cardImage.getAttribute("alt") || "Project preview image";
+                        previewImage.classList.add("active");
+
+                        overlay.classList.add("active");
+                        document.body.style.overflow = "hidden";
+                    }
+
+                    if (mediaType === "video") {
+                        previewVideo.src = mediaSrc;
+                        previewVideo.muted = false;
+                        previewVideo.volume = 1;
+                        previewVideo.controls = true;
+                        previewVideo.classList.add("active");
+
+                        overlay.classList.add("active");
+                        document.body.style.overflow = "hidden";
+
+                        previewVideo.load();
+
+                        previewVideo.play().catch(function () {
+                            previewVideo.controls = true;
+                        });
+                    }
+                });
+            });
+
+            function closePreview() {
+                overlay.classList.remove("active");
+                document.body.style.overflow = "";
+
+                previewImage.classList.remove("active");
+                previewVideo.classList.remove("active");
+
+                previewImage.src = "";
+
+                previewVideo.pause();
+                previewVideo.removeAttribute("src");
+                previewVideo.load();
+            }
+
+            closeBtn.addEventListener("click", closePreview);
+
+            overlay.addEventListener("click", function (e) {
+                if (e.target === overlay) {
+                    closePreview();
+                }
+            });
+
+            document.addEventListener("keydown", function (e) {
+                if (e.key === "Escape") {
+                    closePreview();
+                }
+            });
+        });
+    </script>
+
+    <!-- Tabs + Mobile Sidebar Fixed Script -->
+    <script>
+        const tablinks = document.getElementsByClassName("tab-links");
+        const tabcontents = document.getElementsByClassName("tab-contents");
+        const sidemenu = document.getElementById("sidemenu");
+
+        function opentab(event, tabname) {
+            for (let tablink of tablinks) {
+                tablink.classList.remove("active-link");
+            }
+
+            for (let tabcontent of tabcontents) {
+                tabcontent.classList.remove("active-tab");
+            }
+
+            event.currentTarget.classList.add("active-link");
+
+            const selectedTab = document.getElementById(tabname);
+            if (selectedTab) {
+                selectedTab.classList.add("active-tab");
+            }
+        }
+
+        function openmenu() {
+            sidemenu.style.right = "0";
+            document.body.style.overflow = "hidden";
+        }
+
+        function closemenu() {
+            sidemenu.style.right = "-220px";
+            document.body.style.overflow = "";
+        }
+
+        document.querySelectorAll("#sidemenu a").forEach(function(link) {
+            link.addEventListener("click", function() {
+                closemenu();
+            });
+        });
+
+        document.addEventListener("click", function(e) {
+            if (window.innerWidth > 600) return;
+
+            const clickedInsideMenu = sidemenu.contains(e.target);
+            const clickedMenuButton = e.target.closest(".fa-bars");
+
+            if (!clickedInsideMenu && !clickedMenuButton && sidemenu.style.right === "0px") {
+                closemenu();
+            }
+        });
+
+        window.addEventListener("resize", function() {
+            if (window.innerWidth > 600) {
+                document.body.style.overflow = "";
+                sidemenu.style.right = "";
+            }
+        });
+    </script>
+
+</body>
+</html>
